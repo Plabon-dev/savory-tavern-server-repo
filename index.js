@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// hjf hf hd dhd dhd hdhd hdhd hdhd hdhd hdhd
+// hjf hf hd dhd dhd hdhd hdhd hdhd 
 
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.ull5nsx.mongodb.net/?retryWrites=true&w=majority`;
