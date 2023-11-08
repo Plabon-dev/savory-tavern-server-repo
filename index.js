@@ -31,7 +31,7 @@ async function run() {
     const foodCollection = client.db('savoryTavern').collection('allFood');
     const bookingCollection = client.db('savoryTavern').collection('bookings');
     
-
+    // all food
     app.get('/allfood', async (req, res) => {
         const query = req.query
         const page = query.page
@@ -133,8 +133,7 @@ async function run() {
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
   } finally {
-    // Ensures that the client will close when you finish/error
-    // await client.close();
+    
   }
 }
 run().catch(console.dir);
