@@ -95,7 +95,7 @@ async function run() {
         });
          
 
-        // bookings
+        // bookings CRUD
 
 
         app.get('/bookings', async(req, res) =>{
